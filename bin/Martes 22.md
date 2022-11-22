@@ -1,4 +1,5 @@
-# Martes 22/11/2022 Quinta clase
+# Martes 22/11/2022 
+<span style ="color:red"> Quinta clase
 
 ## Compilador
 Sintaxis - Codigo bien escrito, palabras reservadas
@@ -44,7 +45,13 @@ Siempre al inicio
 3. declaracion (decirle al programa que eres) , inicializacion
 
 ## Parametro
-Son obligatorios y aveces no 
-deben tener "tipo de dato" + "nombre"
+<span style ="color:red">Son obligatorios y aveces no, deben tener "tipo de dato" + "nombre"
+
 public static void main (**String argumento**)
 
+
+
+## Tipos de lenguajes
+- compilado
+- interpretado
+- intermedio
