@@ -21,7 +21,8 @@ nombreCompletoApellido   nombre_Completo
 ```
 public class Hola {
     public static void main(String[] args) {
-        String nombre = "gabo"
+        String nombre; <-----Declaracion
+        nombre = "gabo";  <----- inicializacion
         System.out.println("Hello " + "nombre");
     }
 }
@@ -34,5 +35,16 @@ public class Hola {
 - static --> Este bloque de codigo esta fijo
 - public --> Todas las personas pueden ver lo que se hace
 
-# Deber: Revisar tipos de datos orginarios y por creacion de objetos. EJ. String, Integer, int,.. etc.
+### Deber: Revisar tipos de datos orginarios y por creacion de objetos. EJ. String, Integer, int,.. etc.
+
+## Nombrar variable
+Siempre al inicio
+1. Std. camelcase
+2. nombre asociado
+3. declaracion (decirle al programa que eres) , inicializacion
+
+## Parametro
+Son obligatorios y aveces no 
+deben tener "tipo de dato" + "nombre"
+public static void main (**String argumento**)
 
