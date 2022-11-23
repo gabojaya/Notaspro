@@ -29,3 +29,18 @@ Tiene un defecto
 ### <span style ="color:orange">**Bug**
 Ausencia de seguridad-Vulneravilidad
 
+
+## Operador ternario
+```
+m = (a>b)? a:b;
+        System.out.println("El valor de m es "+ m);
+ ```
+ - Sirve para simplificar los 
+ ```
+ if(a>b){
+    m=a;
+ }else{
+    m=b;
+ }
+ ```
+ Conlusion: Programar de manera **PRO** se logra con tecnica
