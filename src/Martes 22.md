@@ -54,4 +54,4 @@ public static void main (**String argumento**)
 ## Tipos de lenguajes
 - compilado
 - interpretado
-- intermedio
+- intermedios
