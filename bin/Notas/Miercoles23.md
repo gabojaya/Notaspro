@@ -1,5 +1,5 @@
-# Miercoles 23 ---Sexta clase
-Algoritmia -->Algoritmo----> Solucionar un Problema
+# <span style ="color:skyblue">**Miercoles 23 ---Sexta clase**
+<span style ="color:lightgreen">**Algoritmia -->Algoritmo----> Solucionar un Problema**
 1. Pseudocodigo
 2. Diagramas de flujo
 3. Codigo (Java)
@@ -16,3 +16,16 @@ public class MayorNumero {
     }
 }
 ```
+
+### <span style ="color:orange">**Error**
+- compitador
+-- sintaxis y semantico
+- logico
+--division por 0
+
+### <span style ="color:orange">**Issue**
+Tiene un defecto
+
+### <span style ="color:orange">**Bug**
+Ausencia de seguridad-Vulneravilidad
+
