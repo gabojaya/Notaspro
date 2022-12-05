@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch Deber",
+            "request": "launch",
+            "mainClass": "Deber",
+            "projectName": "Notaspro_1644e143"
+        },
+        {
+            "type": "java",
             "name": "Launch MayorNumero",
             "request": "launch",
             "mainClass": "MayorNumero",
