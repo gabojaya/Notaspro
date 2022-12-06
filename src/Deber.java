@@ -9,12 +9,10 @@ import java.util.Scanner;
 public class Deber {
 	/*
 	 * Problema del rio: Hay un lobo 🐺, unas caperucita y unas uvas 🍇  que quieren cruzan de un lado del río al otro extremo. Las reglas son:
-	 * -si esta solo el lobo con la caperucita  (marcha la caperucita )
-	 * - si la caperucita esta solo con las uvas (marchan las uvas)
+	 * -si esta solo el lobo con la caperucita  (marcha la caperucita) o si la caperucita esta solo con las uvas (marchan las uvas)
 	 */
 	/**
 	 * Esta funcion sirve para verificar si se gana o pierde
-	 * 
 	 * @param string con los elementos de la orilla
 	 * @param string con los elementos al otro lado del rio
 	 * @return una variable boolean que cierra o continua la repeticion
@@ -40,7 +38,6 @@ public class Deber {
 
 	/**
 	 * Esta funcion sirve para pasar o regresar a alguien en un bote
-	 * 
 	 * @param ladoOrilla
 	 * @param ladoRio
 	 * @param ser        elegido

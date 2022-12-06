@@ -41,7 +41,7 @@ public class Debercopy {
 	 * Esta funcion sirve para pasar o regresar a alguien en un bote
 	 * @param ladoOrilla
 	 * @param ladoRio
-	 * @param ser        elegido
+	 * @param ser_escogido
 	 */
 	public static void transporte(String[] ladoOrilla, String[] ladoRio, String palabraEscrita) {
 		String[] bote = { " ", " ", " ", " " };
