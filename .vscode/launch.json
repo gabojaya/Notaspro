@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch DeberGabrielJaya",
+            "request": "launch",
+            "mainClass": "DeberGabrielJaya",
+            "projectName": "Notaspro_fd050aa9"
+        },
+        {
+            "type": "java",
             "name": "Launch gabriel",
             "request": "launch",
             "mainClass": "gabriel",
