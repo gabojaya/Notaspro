@@ -6,12 +6,12 @@ import java.util.Scanner;
  * @author Gabriel
  *
  */
-public class Deber {
+public class CopiaDeber {
 	/*
-	 * Problema del rio: Hay un lobo 🐺, unas caperucita y unas uvas 🍇  que quieren 
+	 * Problema del rio: Hay un Lobo 🐺, unas Caperucita y unas Uvas 🍇  que quieren 
 	 * cruzan de un lado del río al otro extremo. Las reglas son:
-	 * -si esta solo el lobo con la caperucita  (marcha la caperucita )
-	 * - si la caperucita esta solo con las uvas (marchan las uvas)
+	 * -si esta solo el Lobo con la C  (marcha la Caperucita )
+	 * - si la Caperucita esta solo con las Uvas (marchan las Uvas)
 	 */
 	/**
 	 * Esta funcion sirve para verificar si se gana o pierde
@@ -22,17 +22,17 @@ public class Deber {
 	 */
 	public static boolean verificarVoD(String[] lado1, String[] lado2) {
 		boolean bandera2 = true;
-		if (lado1[0].equals(" ") && ((lado1[1].equals("lobo")) && (lado1[2].equals("caperucita")))
-				|| (lado2[0].equals(" ") && (lado2[1].equals("lobo")) && (lado2[2].equals("caperucita")))) {
-			System.out.println("El lobo se comio a la caperucita, Perdiste!!");
+		if (lado1[0].equals(" ") && ((lado1[1].equals("L")) && (lado1[2].equals("C")))
+				|| (lado2[0].equals(" ") && (lado2[1].equals("L")) && (lado2[2].equals("C")))) {
+			System.out.println("El L se comio a la C, Perdiste!!");
 			return false;
-		} else if ((lado1[0].equals(" ") && (lado1[2].equals("caperucita")) && (lado1[3].equals("uvas")))
-				|| (lado2[0].equals(" ") && (lado2[2].equals("caperucita")) && (lado2[3].equals("uvas")))) {
-			System.out.println("La Caperucita se comio las uvas, Perdiste!!");
+		} else if ((lado1[0].equals(" ") && (lado1[2].equals("C")) && (lado1[3].equals("U")))
+				|| (lado2[0].equals(" ") && (lado2[2].equals("C")) && (lado2[3].equals("U")))) {
+			System.out.println("La C se comio las U, Perdiste!!");
 			return false;
 		}
-		if ((lado2[0].equals("observador")) && (lado2[1].equals("lobo")) && (lado2[2].equals("caperucita"))
-				&& (lado2[3].equals("uvas"))) {
+		if ((lado2[0].equals("O")) && (lado2[1].equals("L")) && (lado2[2].equals("C"))
+				&& (lado2[3].equals("U"))) {
 			System.out.println("Lograste pasar a todos, Felicidades ganaste!!");
 			bandera2 = false;
 		}
@@ -49,19 +49,19 @@ public class Deber {
 	public static void transporte(String[] ladoOrilla, String[] ladoRio, String palabraEscrita) {
 		String[] bote = { " ", " ", " ", " " };
 		switch (palabraEscrita) {
-		case "observador":
+		case "O":
 			ladoRio[0] = ladoOrilla[0];
 			ladoOrilla[0] = bote[0];
 			break;
-		case "lobo":
+		case "L":
 			ladoRio[1] = ladoOrilla[1];
 			ladoOrilla[1] = bote[1];
 			break;
-		case "caperucita":
+		case "C":
 			ladoRio[2] = ladoOrilla[2];
 			ladoOrilla[2] = bote[2];
 			break;
-		case "uvas":
+		case "U":
 			ladoRio[3] = ladoOrilla[3];
 			ladoOrilla[3] = bote[3];
 			break;
@@ -73,17 +73,17 @@ public class Deber {
 	public static void main(String[] args) {
 		//Declaracion de variables
 		Scanner ingresoDatos = new Scanner(System.in);
-		String[] lado1 = { "observador", "lobo", "caperucita", "uvas" };
+		String[] lado1 = { "O", "L", "C", "U" };
 		String[] lado2 = { " ", " ", " ", " " };
 		String palabraEscrita;
 		boolean bandera = true;
 		//Problema
 		System.out.println("Contigo estan " + Arrays.toString(lado1));
 		System.out.println(
-				"Se quiere cruzar un rio pero sin que el lobo se coma a la caperucita y la caperucita se coma las uvas");
+				"Se quiere cruzar un rio pero sin que el L se coma a la C y la C se coma las U");
 		while (bandera == true) {
 			System.out.println("Escriba el nombre de que objeto/persona va a subir al bote");
-			palabraEscrita = ingresoDatos.nextLine().toLowerCase();
+			palabraEscrita = ingresoDatos.nextLine().toUpperCase();
 			transporte(lado1, lado2, palabraEscrita);
 			System.out.println("En la orilla estan " + Arrays.toString(lado1));
 			System.out.println("Al otro lado del rio estan " + Arrays.toString(lado2));
