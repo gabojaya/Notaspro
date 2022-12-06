@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch Debercopy",
+            "request": "launch",
+            "mainClass": "Debercopy",
+            "projectName": "Notaspro_1644e143"
+        },
+        {
+            "type": "java",
             "name": "Launch Deber",
             "request": "launch",
             "mainClass": "Deber",
