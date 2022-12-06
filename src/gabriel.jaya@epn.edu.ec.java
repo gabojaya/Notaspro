@@ -7,7 +7,7 @@ import java.util.Scanner;
  * @author Gabriel
  * @version 2.0
  */
-public class Deber {
+public class DeberGabrielJaya {
 	
 	/**
 	 * Esta funcion sirve para verificar si se gana o pierde
@@ -88,6 +88,9 @@ public class Deber {
 			System.out.println("En la orilla estan " + Arrays.toString(lado1));
 			System.out.println("Al otro lado del rio estan " + Arrays.toString(lado2));
 			bandera = verificarVoD(lado1, lado2);
+			if(bandera==false){
+				break;
+			}
 			System.out.println("**Desea regresar con alguien? SI/NO**");
 			palabraEscrita = ingresoDatos.nextLine().toLowerCase();
 			if (palabraEscrita.equals("si")) {
@@ -95,7 +98,7 @@ public class Deber {
 				palabraEscrita = ingresoDatos.nextLine().toLowerCase();
 				transporte(lado2, lado1, palabraEscrita);
 			}else {
-				System.out.println("**No regreso nadie en el bote**");
+				transporte(lado2, lado1, "observador");
 			}
 			System.out.println("En orilla estan " + Arrays.toString(lado1));
 			System.out.println("Al otro lado del rio estan " + Arrays.toString(lado2));
