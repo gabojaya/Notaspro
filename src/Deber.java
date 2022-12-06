@@ -2,15 +2,13 @@ import java.util.Arrays;
 import java.util.Scanner;
 
 /**
- * 
+ * Hay un lobo, una caperucita y unas uvas que quieren cruzan de un lado del rio al otro extremo.
+ * Las reglas son: -si esta solo el lobo con la caperucita  (marcha la caperucita) o si la caperucita esta solo con las uvas (marchan las uvas)
  * @author Gabriel
- *
+ * @version 2.0
  */
 public class Deber {
-	/*
-	 * Problema del rio: Hay un lobo 🐺, unas caperucita y unas uvas 🍇  que quieren cruzan de un lado del río al otro extremo. Las reglas son:
-	 * -si esta solo el lobo con la caperucita  (marcha la caperucita) o si la caperucita esta solo con las uvas (marchan las uvas)
-	 */
+	
 	/**
 	 * Esta funcion sirve para verificar si se gana o pierde
 	 * @param string con los elementos de la orilla
@@ -52,14 +50,20 @@ public class Deber {
 		case "lobo":
 			ladoRio[1] = ladoOrilla[1];
 			ladoOrilla[1] = bote[1];
+			ladoRio[0] = ladoOrilla[0];
+			ladoOrilla[0] = bote[0];
 			break;
 		case "caperucita":
 			ladoRio[2] = ladoOrilla[2];
 			ladoOrilla[2] = bote[2];
+			ladoRio[0] = ladoOrilla[0];
+			ladoOrilla[0] = bote[0];
 			break;
 		case "uvas":
 			ladoRio[3] = ladoOrilla[3];
 			ladoOrilla[3] = bote[3];
+			ladoRio[0] = ladoOrilla[0];
+			ladoOrilla[0] = bote[0];
 			break;
 		default:
 			break;
@@ -83,6 +87,7 @@ public class Deber {
 			transporte(lado1, lado2, palabraEscrita);
 			System.out.println("En la orilla estan " + Arrays.toString(lado1));
 			System.out.println("Al otro lado del rio estan " + Arrays.toString(lado2));
+			bandera = verificarVoD(lado1, lado2);
 			System.out.println("**Desea regresar con alguien? SI/NO**");
 			palabraEscrita = ingresoDatos.nextLine().toLowerCase();
 			if (palabraEscrita.equals("si")) {
