@@ -9,6 +9,13 @@
             "name": "Launch DeberGabrielJaya",
             "request": "launch",
             "mainClass": "DeberGabrielJaya",
+            "projectName": "Notaspro_1644e143"
+        },
+        {
+            "type": "java",
+            "name": "Launch DeberGabrielJaya",
+            "request": "launch",
+            "mainClass": "DeberGabrielJaya",
             "projectName": "Notaspro_fd050aa9"
         },
         {

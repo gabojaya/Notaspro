@@ -2,16 +2,17 @@ import java.util.Arrays;
 import java.util.Scanner;
 
 /**
- * Hay un lobo, una caperucita y unas uvas que quieren cruzan de un lado del rio al otro extremo.
- * Las reglas son: -si esta solo el lobo con la caperucita  (marcha la caperucita) o si la caperucita esta solo con las uvas (marchan las uvas)
+ * 
  * @author Gabriel
  * @date : 06.dic.2022
  * @version 2.0
+ * Hay un lobo, una caperucita y unas uvas que quieren cruzan de un lado del rio al otro extremo.
+ * Las reglas son: -si esta solo el lobo con la caperucita  (marcha la caperucita) o si la caperucita esta solo con las uvas (marchan las uvas)
  */
 public class DeberGabrielJaya {
-	
+
 	/**
-	 * Esta funcion sirve para verificar si se gana o pierde
+	 * Esta funcion sirve para verificar si gana o pierde
 	 * @param string con los elementos de la orilla
 	 * @param string con los elementos al otro lado del rio
 	 * @return una variable boolean que cierra o continua la repeticion
@@ -34,12 +35,11 @@ public class DeberGabrielJaya {
 		}
 		return bandera2;
 	}
-
 	/**
 	 * Esta funcion sirve para pasar o regresar a alguien en un bote
 	 * @param ladoOrilla
 	 * @param ladoRio
-	 * @param ser        elegido
+	 * @param elemento_elegido
 	 */
 	public static void transporte(String[] ladoOrilla, String[] ladoRio, String palabraEscrita) {
 		String[] bote = { " ", " ", " ", " " };
@@ -70,7 +70,6 @@ public class DeberGabrielJaya {
 			break;
 		}
 	}
-
 	public static void main(String[] args) {
 		//Declaracion de variables
 		Scanner ingresoDatos = new Scanner(System.in);
