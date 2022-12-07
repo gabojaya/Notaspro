@@ -3,13 +3,13 @@ import java.util.Scanner;
 
 /**
  * 
- * @author Gabriel
+ * @author Gabriel Jaya
  * @date : 06.dic.2022
  * @version 2.0
  * Hay un lobo, una caperucita y unas uvas que quieren cruzan de un lado del rio al otro extremo.
  * Las reglas son: -si esta solo el lobo con la caperucita  (marcha la caperucita) o si la caperucita esta solo con las uvas (marchan las uvas)
  */
-public class DeberGabrielJaya {
+public class DeberN1GabrielJaya {
 
 	/**
 	 * Esta funcion sirve para verificar si gana o pierde
